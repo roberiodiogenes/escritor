@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca | Robério Diógenes</title>
+    <meta name="description" content="Explore as obras de Robério Diógenes. Do suspense psicológico ao horror gótico, encontre sua próxima leitura.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <style>
+        :root {
+            --bg-biblioteca: #0f0f12;
+            --card-livro-bg: #1a1a1f;
+        }
+
+        body { background-color: var(--bg-biblioteca); }
+
+        /* Animação de Entrada Elegante (Fade + Blur) */
+        .reveal-book {
+            opacity: 0;
+            filter: blur(10px);
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-book.visible {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0);
+        }
+
+        /* Estilo da Estante/Card */
+        .livro-card {
+            background: var(--card-livro-bg);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+
+        .livro-card:hover {
+            border-color: var(--cor-destaque-primaria);
+            background: #222229;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        /* Capa com efeito de Profundidade */
+        .capa-wrapper {
+            perspective: 1000px;
+            margin-bottom: 25px;
+        }
+
+        .capa-img {
+            width: 100%;
+            border-radius: 4px 8px 8px 4px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.5), 
+                        inset 2px 0 5px rgba(255,255,255,0.1);
+            transition: transform 0.5s ease;
+            transform-origin: left;
+        }
+
+        .livro-card:hover .capa-img {
+            transform: rotateY(-10deg) scale(1.02);
+        }
+
+        .btn-amazon-sm {
+            background-color: #ff9900;
+            color: #000 !important;
+            font-weight: bold;
+            border: none;
+        }
+        
+        .btn-amazon-sm:hover {
+            background-color: #e68a00;
+        }
+
+        .divider-biblioteca {
+            width: 50px;
+            height: 2px;
+            background: var(--cor-destaque-primaria);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">ROBÉRIO DIÓGENES</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Livros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../autor.html">O Autor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../blogger/index.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5">
+        <div class="container">
+            <header class="mb-5 text-center">
+                <h1 class="display-3 text-white fw-bold">Obras Publicadas</h1>
+                <p class="text-suave">Navegue pelos universos criados por Robério Diógenes</p>
+            </header>
+
+            <div class="row g-5">
+                <div class="col-lg-6 reveal-book">
+                    <div class="livro-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 capa-wrapper">
+                                <a href="a-setima-lei.html">
+                                    <img src="../capas/a-setima-lei-card.jpg" alt="A Sétima Lei" class="capa-img img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-md-7">
+                                <span class="badge-genero mb-2 d-inline-block text-uppercase small">Auto ajuda cristã</span>
+                                <h2 class="h3 text-white mb-3">A Sétima Lei</h2>
+                                <p class="small text-suave mb-4">Dói? Pois é. E ninguém tem falado sobre essa dor com honestidade. A Guerra Invisível no Casamento fala. Sem maquiagem. Sem versículo fora de contexto. Sem culpa para quem já está no chão.</p>
+                                <div class="divider-biblioteca"></div>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="a-setima-lei.html" class="btn btn-outline-light btn-sm">Ver Detalhes</a>
+                                    <a href="https://www.amazon.com.br/dp/B0GXGZJV1Y" target="_blank" class="btn btn-amazon-sm btn-sm">
+                                        <i class="fab fa-amazon me-1"></i> Amazon
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 reveal-book">
+                    <div class="livro-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 capa-wrapper">
+                                <a href="o-jogo-das-mascaras.html">
+                                    <img src="../capas/jogo-das-mascaras-card.jpg" alt="O Jogo das Máscaras" class="capa-img img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-md-7">
+                                <span class="badge-genero mb-2 d-inline-block text-uppercase small">Thriller psicológico</span>
+                                <h2 class="h3 text-white mb-3">O Jogo das Máscaras</h2>
+                                <p class="small text-suave mb-4">Este livro mergulha nas camadas mais íntimas da alma humana, onde desejo, dor e segredos dançam em um delicado equilíbrio. Entre amores imperfeitos, escolhas perigosas e verdades escondidas, cada personagem veste uma face… mas nem todos conseguem sustentá-la até o fim.
+                                <div class="divider-biblioteca"></div>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="o-jogo-das-mascaras.html" class="btn btn-outline-light btn-sm">Ver Detalhes</a>
+                                    <a href="https://www.amazon.com.br/jogo-das-m%C3%A1scaras-verdade-disfarce-ebook/dp/B0FTTFPWXB" class="btn btn-amazon-sm btn-sm" target="_blank">
+                                        <i class="fab fa-amazon me-1"></i> Amazon
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </main>
+
+    <footer class="footer-detalhado pt-5 pb-3">
+    <div class="container">
+        <div class="row gy-4">
+            
+            <div class="col-lg-4 col-md-6">
+                <h5 class="fw-bold mb-4 text-white">ROBÉRIO DIÓGENES</h5>
+                <p class="text-suave small pe-lg-5">
+                    Explorando os abismos da alma humana através do suspense psicológico e do horror atmosférico. Literatura independente com profundidade e mistério.
+                </p>
+                <div class="redes-sociais mt-4">
+                    <a href="https://instagram.com/diogenesroberio" target="_blank" class="me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.amazon.com.br/dp/B0GXGZJV1Y" target="_blank" class="me-3"><i class="fab fa-amazon"></i></a>
+                    <a href="#"><i class="fab fa-threads"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-white fw-bold mb-4 text-uppercase small">Navegação</h6>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../autor.html">Sobre o Autor</a></li>
+                    <li><a href="../index.html#livros">Obras</a></li>
+                    <li><a href="../blogger/index.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h6 class="text-white fw-bold mb-4 text-uppercase small">Mais Lidos</h6>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="../livros/a-setima-lei.html">A Sétima Lei</a></li>
+                    <li><a href="../livros/o-jogo-das-mascaras.html">O Jogo das Máscaras</a></li>
+                    <li><a href="../livros/lumen.html">Lúmen, a outra metade do céu</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+    <h6 class="text-white fw-bold mb-4 text-uppercase small">Contato</h6>
+    <p class="text-suave small mb-2">
+        <i class="fas fa-envelope me-2 text-accent"></i> 
+        <a href="mailto:escritor.diogenes@gmail.com" class="text-suave">escritor.diogenes@gmail.com</a>
+    </p>
+    <p class="text-suave small">
+        <i class="fas fa-map-marker-alt me-2 text-accent"></i> 
+        Cascavel, Ceará - Brasil
+    </p>
+</div>
+
+        </div>
+
+        <div class="border-top border-secondary mt-5 pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-suave mb-0">&copy; 2026 Robério Diógenes. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small text-suave mb-0">Design para Escritores</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animação de revelação suave (Scroll Reveal)
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-book').forEach(book => {
+            observer.observe(book);
+        });
+    </script>
+</body>
+</html>

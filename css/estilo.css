@@ -124,20 +124,6 @@ a {
     width: 100%;
 }
 
-/* Estilização dos itens dentro do Dropdown */
-.dropdown-item {
-    color: var(--cor-texto-claro) !important;
-    padding: 10px 20px;
-    font-family: var(--fonte-corpo);
-    font-size: 0.9rem;
-    transition: 0.2s;
-}
-
-.dropdown-item:hover {
-    background-color: var(--cor-destaque-primaria);
-    color: white !important;
-}
-
 /* --- Estilização do Footer --- */
 .footer-detalhado {
     background-color: #0a0a0c; /* Um tom ainda mais escuro que o bg-principal */

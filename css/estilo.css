@@ -1,0 +1,180 @@
+/* Variáveis de Cores e Estilo - Foco: Suspense e Drama */
+:root {
+    /* Tons de Fundo (Noir) */
+    --cor-bg-principal: #1C1C1C;       /* Fundo quase preto, profundo */
+    --cor-bg-secundario: #2F2F2F;    /* Para seções de destaque e cards */
+    
+    /* Tons de Texto */
+    --cor-texto-claro: #D6CFC7;       /* Branco acinzentado para leitura confortável */
+    --cor-texto-suave: #F5F5F5;       /* Cinza para informações secundárias */
+    
+    /* Cores de Destaque (Sóbrias e Elegantes) */
+    --cor-destaque-primaria: #C2A96A;  /* Vinho (Dark Red) para CTAs e títulos */
+    --cor-destaque-hover: #b22222;    /* Vermelho um pouco mais vivo para o mouse */
+    --cor-detalhe-borda: #333338;     /* Bordas sutis para divisões */
+    
+    /* Tipografia */
+    --fonte-titulos: 'Playfair Display', serif;
+    --fonte-corpo: 'Inter', sans-serif;
+}
+
+/* Animação de Surgimento */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Configurações Globais Básicas */
+body {
+    background-color: var(--cor-bg-principal);
+    color: var(--cor-texto-claro);
+    font-family: var(--cor-corpo);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, .display-font {
+    font-family: var(--fonte-titulos);
+    font-weight: 700;
+    color: var(--cor-texto-claro);
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Utilitários Extras */
+.bg-dark-section {
+    background-color: var(--cor-bg-secundario);
+}
+
+.text-accent {
+    color: var(--cor-destaque-primaria);
+}
+
+.btn-escritor {
+    background-color: var(--cor-destaque-primaria);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.btn-escritor:hover {
+    background-color: var(--cor-destaque-hover);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* --- Efeito Hover no Dropdown (Desktop) --- */
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Remove o delay de espaço */
+        animation: fadeIn 0.3s ease-in;
+    }
+}
+
+/* Ajuste para o Dropdown no Mobile (evita que ele fique invisível) */
+@media (max-width: 991px) {
+    .dropdown-menu {
+        background-color: var(--cor-bg-secundario) !important;
+        border: none;
+        padding-left: 15px; /* Indenta os itens no mobile para dar hierarquia */
+    }
+    .dropdown-item {
+        padding: 10px 0;
+    }
+}
+
+/* Animação suave para o menu aparecer */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Charme nos Links do Menu Geral --- */
+.nav-link {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Linha discreta que surge por baixo do link ao passar o mouse */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor-destaque-primaria);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Estilização dos itens dentro do Dropdown */
+.dropdown-item {
+    color: var(--cor-texto-claro) !important;
+    padding: 10px 20px;
+    font-family: var(--fonte-corpo);
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: var(--cor-destaque-primaria);
+    color: white !important;
+}
+
+/* --- Estilização do Footer --- */
+.footer-detalhado {
+    background-color: #0a0a0c; /* Um tom ainda mais escuro que o bg-principal */
+    border-top: 1px solid var(--cor-detalhe-borda);
+}
+
+.footer-links {
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: var(--cor-texto-suave);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--cor-destaque-primaria);
+    padding-left: 5px; /* Efeito de deslocamento sutil */
+}
+
+.redes-sociais i {
+    font-size: 1.4rem;
+    color: var(--cor-texto-claro);
+    transition: 0.3s;
+}
+
+.redes-sociais i:hover {
+    color: var(--cor-destaque-primaria);
+    transform: translateY(-3px);
+}
+
+/* Ajuste de tipografia para os títulos do rodapé */
+.footer-detalhado h5, .footer-detalhado h6 {
+    letter-spacing: 1px;
+}

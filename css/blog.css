@@ -1,0 +1,72 @@
+/* Estilos Específicos para o Blog */
+:root {
+    --cor-bg-blog: #141418;
+    --cor-card-blog: #1e1e24;
+}
+
+.corpo-leitura {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.15rem;
+    color: var(--cor-texto-claro);
+    font-family: 'Inter', sans-serif;
+}
+
+.corpo-leitura p {
+    margin-bottom: 1.5rem;
+}
+
+.corpo-leitura h2, .corpo-leitura h3 {
+    font-family: var(--fonte-titulos);
+    color: var(--cor-texto-claro);
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.header-post {
+    padding: 80px 0;
+    background: linear-gradient(rgba(0,0,0,0.7), var(--cor-bg-blog)), url('../img/textura-blog.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+.meta-info {
+    font-size: 0.85rem;
+    color: var(--cor-destaque-primaria);
+    text-uppercase;
+    letter-spacing: 1px;
+}
+
+/* Efeito de destaque para a primeira letra do post (Dropcap) */
+.corpo-leitura > p:first-of-type::first-letter {
+    font-family: var(--fonte-titulos);
+    font-size: 3.5rem;
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
+    color: var(--cor-destaque-primaria);
+}
+
+/* Estilo para a imagem com legenda */
+.img-post-container {
+    margin: 2rem 0;
+}
+.img-post-legend {
+    display: block;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--cor-texto-suave);
+    margin-top: 10px;
+    font-style: italic;
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: var(--cor-destaque-primaria);
+    z-index: 9999;
+}

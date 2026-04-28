@@ -66,17 +66,23 @@
 <body style="background-color: var(--cor-bg-principal);">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="../index.html">ROBÉRIO DIÓGENES</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../autor.html">O Autor</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Blog</a></li>
-                </ul>
-            </div>
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html">ROBÉRIO DIÓGENES</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">Livros</a></li>
+                <li class="nav-item"><a class="nav-link" href="../autor.html">O Autor</a></li>
+                <li class="nav-item"><a class="nav-link" href="../blogger/index.html">Blog</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <header class="py-5 mt-5">
         <div class="container text-center">
@@ -88,48 +94,49 @@
     </header>
 
     <section class="py-5">
-        <div class="container">
-            <div class="row gy-4">
-                
-                <div class="col-md-6 col-lg-4">
-                    <article class="blog-card">
-                        <img src="../img/post-01.jpg" class="blog-card-img" alt="Linguagem Silenciosa da Guerra">
-                        <div class="blog-card-body">
-                            <span class="categoria-label">Psicologia</span>
-                            <h3 class="h4 mt-2 text-white">A Linguagem Silenciosa da Guerra</h3>
-                            <p class="text-suave small">Como pequenos gestos revelam grandes segredos: uma análise sob a ótica de quem está no meio de um conflito conjugal.</p>
-                            <a href="linguagem-silenciosa-da-guerra.html" class="btn-ler-mais text-uppercase">Continuar lendo <i class="fas fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </article>
-                </div>
+    <div class="container">
+        <div class="row gy-4">
 
-                <div class="col-md-6 col-lg-4">
-                    <article class="blog-card">
-                        <img src="../img/post-placeholder.jpg" class="blog-card-img" alt="Título do Post">
-                        <div class="blog-card-body">
-                            <span class="categoria-label">Processo Criativo</span>
-                            <h3 class="h4 mt-2 text-white">O Medo como Ferramenta Literária</h3>
-                            <p class="text-suave small">Por que sentimos prazer em sentir medo? Uma exploração sobre as engrenagens do horror clássico.</p>
-                            <a href="#" class="btn-ler-mais text-uppercase">Em breve...</a>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <article class="blog-card">
-                        <img src="../img/post-placeholder-2.jpg" class="blog-card-img" alt="Título do Post">
-                        <div class="blog-card-body">
-                            <span class="categoria-label">Bastidores</span>
-                            <h3 class="h4 mt-2 text-white">A sétima Lei: Por trás das senhas</h3>
-                            <p class="text-suave small">A pesquisa e a realidade que inspiraram o meu novo lançamento na Amazon.</p>
-                            <a href="#" class="btn-ler-mais text-uppercase">Em breve...</a>
-                        </div>
-                    </article>
-                </div>
-
+            <div class="col-md-6 col-lg-4">
+                <article class="blog-card">
+                    <img src="../img/bastidores-setima-lei.jpg" class="blog-card-img" alt="Bastidores do livro A Sétima Lei">
+                    <div class="blog-card-body">
+                        <span class="categoria-label">Bastidores</span>
+                        <h3 class="h4 mt-2 text-white">A Sétima Lei: Por trás das senhas</h3>
+                        <p class="text-suave small">A pesquisa e a realidade que inspiraram o meu novo lançamento. Um mergulho no processo de criação desta obra.</p>
+                        <a href="bastidores-a-setima-lei.html" class="btn-ler-mais text-uppercase">Continuar lendo <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </article>
             </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <article class="blog-card">
+                    <img src="../img/post-01.jpg" class="blog-card-img" alt="Linguagem Silenciosa da Guerra">
+                    <div class="blog-card-body">
+                        <span class="categoria-label">Psicologia</span>
+                        <h3 class="h4 mt-2 text-white">A Linguagem Silenciosa da Guerra</h3>
+                        <p class="text-suave small">Como pequenos gestos revelam grandes segredos: uma análise sob a ótica de quem está no meio de um conflito conjugal.</p>
+                        <a href="linguagem-silenciosa-da-guerra.html" class="btn-ler-mais text-uppercase">Continuar lendo <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            
+            <div class="col-md-6 col-lg-4">
+                <article class="blog-card" style="opacity: 0.8;">
+                    <img src="../img/post-placeholder.jpg" class="blog-card-img" alt="Título do Post">
+                    <div class="blog-card-body">
+                        <span class="categoria-label">Processo Criativo</span>
+                        <h3 class="h4 mt-2 text-white">O Medo como Ferramenta Literária</h3>
+                        <p class="text-suave small">Por que sentimos prazer em sentir medo? Uma exploração sobre as engrenagens do horror clássico.</p>
+                        <span class="text-muted small text-uppercase fw-bold">Em breve...</span>
+                    </div>
+                </article>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
 <footer class="footer-detalhado pt-5 pb-3">
     <div class="container">
@@ -194,6 +201,7 @@
         </div>
     </div>
 </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

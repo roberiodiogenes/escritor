@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Robério Diógenes</title>
+    <meta name="description" content="Entre em contato com o autor Robério Diógenes para entrevistas, parcerias literárias ou feedbacks de leitura.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <style>
+        :root {
+            --bg-contato: #0f0f12;
+            --card-contato: #1a1a1f;
+        }
+
+        body { background-color: var(--bg-contato); color: #fff; }
+
+        .contato-wrapper {
+            background: var(--card-contato);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        }
+
+        .info-sidebar {
+            background: linear-gradient(135deg, #1e1e24 0%, #141418 100%);
+            padding: 40px;
+            height: 100%;
+        }
+
+        .form-control {
+            background: #25252b;
+            border: 1px solid #333;
+            color: #fff;
+            padding: 12px 15px;
+        }
+
+        .form-control:focus {
+            background: #2a2a32;
+            border-color: var(--cor-destaque-primaria);
+            box-shadow: none;
+            color: #fff;
+        }
+
+        .btn-enviar {
+            background: var(--cor-destaque-primaria);
+            color: #000;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 15px 30px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-enviar:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            background: #fff;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .media-kit-box {
+            background: rgba(255,255,255,0.03);
+            border: 1px dashed rgba(255,255,255,0.2);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.05);
+            color: #fff;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            background: var(--cor-destaque-primaria);
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">ROBÉRIO DIÓGENES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="livros/index.html">Livros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="autor.html">O Autor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogger/index.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="contato-wrapper">
+                        <div class="row g-0">
+                            <div class="col-lg-5 info-sidebar">
+                                <h2 class="display-6 fw-bold mb-4">Vamos conversar?</h2>
+                                <p class="text-suave mb-5">Toda história só ganha vida quando encontra um par de olhos disposto a atravessá-la. Use este canal para propostas profissionais ou feedbacks.</p>
+                                
+                                <div class="mb-4">
+                                    <h6 class="text-uppercase small fw-bold text-accent">E-mail Direto</h6>
+                                    <p>escritor.diogenes@gmail.com</p>
+                                </div>
+
+                                <div class="mb-5">
+                                    <h6 class="text-uppercase small fw-bold text-accent">Redes Sociais</h6>
+                                    <div class="d-flex gap-2 mt-3">
+                                        <a href="https://instagram.com/diogenesroberio" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-amazon"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-threads"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="media-kit-box">
+                                    <h6 class="text-white small fw-bold mb-2">Espaço de Imprensa</h6>
+                                    <p class="small text-suave mb-3">Precisa de fotos em alta resolução ou do release oficial do autor?</p>
+                                    <a href="#" class="btn btn-outline-light btn-sm w-100">Baixar Media Kit</a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7 p-4 p-md-5">
+                                <form action="https://formsubmit.co/escritor.diogenes@gmail.com" method="POST">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="small text-uppercase fw-bold mb-2">Seu Nome</label>
+                                            <input type="text" name="name" class="form-control" placeholder="Como quer ser chamado?" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="small text-uppercase fw-bold mb-2">Seu E-mail</label>
+                                            <input type="email" name="email" class="form-control" placeholder="exemplo@email.com" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="small text-uppercase fw-bold mb-2">Assunto</label>
+                                            <select name="subject" class="form-control">
+                                                <option value="Feedback de Leitura">Feedback de Leitura</option>
+                                                <option value="Convite para Entrevista">Convite para Entrevista / Palestra</option>
+                                                <option value="Parceria Literária">Parceria Literária</option>
+                                                <option value="Outros">Outros assuntos</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="small text-uppercase fw-bold mb-2">Mensagem</label>
+                                            <textarea name="message" rows="5" class="form-control" placeholder="Escreva aqui sua mensagem..." required></textarea>
+                                        </div>
+                                        <div class="col-12 mt-4">
+                                            <button type="submit" class="btn btn-enviar w-100">Enviar Mensagem</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="mt-5 pt-4 border-top border-secondary">
+                                    <h5 class="h6 text-white mb-4">Perguntas Comuns (FAQ)</h5>
+                                    <div class="faq-item">
+                                        <p class="small fw-bold text-white mb-1">Você lê originais de outros autores?</p>
+                                        <p class="small text-suave">No momento, devido à agenda de lançamentos, não estou realizando leituras críticas de terceiros.</p>
+                                    </div>
+                                    <div class="faq-item">
+                                        <p class="small fw-bold text-white mb-1">Como agendar uma palestra ou clube do livro?</p>
+                                        <p class="small text-suave">Basta selecionar "Convite" no formulário acima com pelo menos 15 dias de antecedência.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-detalhado pt-5 pb-3">
+        <div class="container text-center">
+            <p class="small text-suave">&copy; 2026 Robério Diógenes. <a href="index.html" class="text-accent">Voltar ao Início</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
